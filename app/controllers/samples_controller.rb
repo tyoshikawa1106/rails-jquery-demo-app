@@ -1,9 +1,12 @@
 class SamplesController < ApplicationController
 
-	def index
-	end
+  def index
+  end
 
-	def colorbox
-	end
-	
+  def colorbox
+  end
+
+  def tablesorter
+  end
+  
 end

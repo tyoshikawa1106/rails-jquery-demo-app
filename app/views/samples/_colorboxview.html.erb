@@ -1,0 +1,16 @@
+<div class="col-md-4 floatClear">
+  <div>
+    <h3><%= title %></h3>
+  </div>
+  <div>
+    <div>
+      <img src="<%= asset_path image_url %>" alt="" height="150px" class="img-responsive" />
+    </div>
+    <div>
+      <img src="<%= asset_path "common/stars_300.gif" %>" alt="stars" />
+    </div>
+  </div>
+  <div class="floatRight">
+    <%= link_to "View", 'assets/' + image_url, { :class => "img-group cboxElement btn btn-warning" } %>
+  </div>
+</div>

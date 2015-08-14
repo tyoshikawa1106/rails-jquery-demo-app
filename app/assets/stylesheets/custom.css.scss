@@ -1,0 +1,32 @@
+@import "bootstrap";
+
+body {
+  padding: 50px 0;
+  color: #c67a00;
+  background-color: #F3EED5;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+.tableSorterView {
+  padding: 10px;
+  table thead th:hover {
+    cursor: pointer;
+  }
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatClear:after {
+  clear:both;
+}

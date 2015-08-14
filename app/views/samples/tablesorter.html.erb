@@ -1,0 +1,60 @@
+<% provide(:title, 'Table Sorter Demo') %>
+
+<% content_for :library do %>
+  <!-- tablesorter -->
+  <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.17.8/js/jquery.tablesorter.min.js" %>
+  <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.17.8/css/theme.blue.css" %>
+<% end %>
+
+<div class="tableSorterView">
+  <table class="table tablesorter tablesorter-default" id="mytable">
+    <thead>
+      <tr >
+        <th>Name</th>
+        <th>Code</th>
+        <th>Phone</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>東京営業所</td>
+        <td>A-001</td>
+        <td>000-123-123</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>神奈川営業所</td>
+        <td>A-002</td>
+        <td>000-123-456</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>静岡営業所</td>
+        <td>A-003</td>
+        <td>000-123-789</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>群馬営業所</td>
+        <td>A-004</td>
+        <td>000-456-123</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>埼玉営業所</td>
+        <td>A-005</td>
+        <td>000-456-456</td>
+        <td>Japan</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(function(){
+    $("#mytable").tablesorter();
+  });
+});
+</script>
