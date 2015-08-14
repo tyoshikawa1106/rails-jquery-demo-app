@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-BootstrapApp::Application.config.secret_key_base = secure_token
+JqueryDemoApp::Application.config.secret_key_base = secure_token
