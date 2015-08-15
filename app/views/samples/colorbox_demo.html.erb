@@ -1,0 +1,29 @@
+<% provide(:title, 'Colorbox Demo') %>
+
+<% content_for :library do %>
+  <!-- colorbox -->
+  <%= javascript_include_tag "colorbox/jquery.colorbox-min.js" %>
+  <%= stylesheet_link_tag "colorbox/colorbox.css" %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <%= render partial: 'colorboxview', locals: {title: "Photo 1", image_url: "common/gardens/garden01.jpg"} %>
+    <%= render partial: 'colorboxview', locals: {title: "Photo 2", image_url: "common/gardens/garden02.jpg"} %>
+    <%= render partial: 'colorboxview', locals: {title: "Photo 3", image_url: "common/gardens/garden03.jpg"} %>
+    <%= render partial: 'colorboxview', locals: {title: "Photo 4", image_url: "common/gardens/garden04.jpg"} %>
+    <%= render partial: 'colorboxview', locals: {title: "Photo 5", image_url: "common/gardens/garden05.jpg"} %>
+    <%= render partial: 'colorboxview', locals: {title: "Photo 6", image_url: "common/gardens/garden06.jpg"} %>
+  </div>
+</div>
+
+<% content_for :scripts do %>
+<script>
+  $(document).ready(function(){
+    $(".img-group").colorbox({
+        rel:'img-group',
+        width: '500px'
+    });
+  });
+</script>
+<% end %>

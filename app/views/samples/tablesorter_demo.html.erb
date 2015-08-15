@@ -51,10 +51,12 @@
   </table>
 </div>
 
+<% content_for :scripts do %>
 <script>
-$(document).ready(function(){
-  $(function(){
-    $("#mytable").tablesorter();
+  $(document).ready(function(){
+    $(function(){
+      $("#mytable").tablesorter();
+    });
   });
-});
 </script>
+<% end %>

@@ -1,7 +1,7 @@
 JqueryDemoApp::Application.routes.draw do
 
-  match '/colorbox', to: 'samples#colorbox', via: 'get'
-  match '/tablesorter', to: 'samples#tablesorter', via: 'get'
+  match '/colorbox_demo', to: 'samples#colorbox_demo', via: 'get'
+  match '/tablesorter_demo', to: 'samples#tablesorter_demo', via: 'get'
   root 'samples#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

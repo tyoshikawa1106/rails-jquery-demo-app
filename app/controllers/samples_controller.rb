@@ -3,10 +3,10 @@ class SamplesController < ApplicationController
   def index
   end
 
-  def colorbox
+  def colorbox_demo
   end
 
-  def tablesorter
+  def tablesorter_demo
   end
   
 end
