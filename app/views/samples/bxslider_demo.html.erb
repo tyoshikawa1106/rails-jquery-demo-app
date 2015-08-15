@@ -1,0 +1,28 @@
+<% provide(:title, 'bxSlider Demo') %>
+
+<% content_for :library do %>
+  <!-- slick -->
+  <%= stylesheet_link_tag "bxslider/jquery.bxslider.css" %>
+  <%= javascript_include_tag "bxslider/jquery.bxslider.min.js" %>
+<% end %>
+
+<div class="container">
+  <div class="bxsliderView">
+    <ul class="bxslider">
+      <li><img src="<%= asset_path 'common/gardens/garden01.jpg' %>" alt="" /></li>
+      <li><img src="<%= asset_path 'common/gardens/garden02.jpg' %>" alt="" /></li>
+      <li><img src="<%= asset_path 'common/gardens/garden03.jpg' %>" alt="" /></li>
+      <li><img src="<%= asset_path 'common/gardens/garden04.jpg' %>" alt="" /></li>
+      <li><img src="<%= asset_path 'common/gardens/garden05.jpg' %>" alt="" /></li>
+      <li><img src="<%= asset_path 'common/gardens/garden06.jpg' %>" alt="" /></li>
+    </ul>
+  </div>
+</div>
+
+<% content_for :scripts do %>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.bxslider').bxSlider();
+  });
+</script>
+<% end %>

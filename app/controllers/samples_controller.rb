@@ -8,5 +8,8 @@ class SamplesController < ApplicationController
 
   def tablesorter_demo
   end
+
+  def bxslider_demo
+  end
   
 end
