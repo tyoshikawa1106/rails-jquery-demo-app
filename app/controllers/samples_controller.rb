@@ -11,5 +11,8 @@ class SamplesController < ApplicationController
 
   def bxslider_demo
   end
+
+  def ihover_demo
+  end
   
 end
